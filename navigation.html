@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Navigation</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"> Boxmodellen</a>
+        <a href="#navigation">Navigation</a>
+        <a href="TGA.html">Målgruppsanalys
+            och kravspecifikation
+            </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="flex-container">
+        <div>
+            <h1>
+                Beskriv kort vad global respektive lokal navigering är. Ta upp likheter och skillnader.
+            </h1>
+            <p>
+                <strong>Global navigering</strong>: <br> Global Navigation även känd som huvudnavigation. <br> Den globala navigeringen representerar i allmänhet sidorna på översta nivån i en webbplatsstruktur – eller sidorna precis under startsidan.
+                Länkarna i den globala navigeringen förväntas leda till sidor på sajten och uppträda på ett mycket konsekvent sätt. Användare förväntar sig inte att landa någonstans helt orelaterade när de använder globala navigeringslänkar. Förändringar
+                i navigeringen från sida till sida är vanligtvis små när du använder den globala navigeringen <br>Den globala navigeringen spelar en avgörande roll för att använda webbplatsen:
+
+                <ol>
+                    <li>Den globala navigeringen ger en översikt och svarar på viktiga frågor som användare kan ha när de först besöker en webbplats, till exempel 'har den här webbplatsen det jag letar efter?'</li>
+                    <li>De globala navigeringshjälpmedel i orientering. Det är tröstande att ha en ihållande navigerings mekanism över hela webbplatsen, särskilt för stora, informationsrika webbplatser.
+                    </li>
+                    <li>Det låter människor byta ämne. Besökare kan komma till andra delar av en webbplats effektivt, eller så kan de återställa sin navigerings väg och börja om med hjälp av globala navigeringsalternativ
+                    </li>
+                    <li>Global navigering ger form åt en webbplats. På många sätt definierar den globala navigeringen gränserna för själva webbplatsen</li>
+                </ol>
+                <br>
+                <strong>Lokal navigering:</strong>: <br> Kallas även: undernavigering, navigering på sidnivå. br Lokal navigering används för att komma åt lägre nivåer i en struktur, under de globala navigerings sidorna. Termen 'lokal' antyder 'inom en
+                given kategori.' På en given sida visar lokal navigering i allmänhet andra alternativ på samma nivå i en hierarki, såväl som alternativen under den aktuella sidan.
+                <br>Lokal navigering fungerar ofta tillsammans med ett globalt navigationssystem och är egentligen en förlängning av den globala navigeringen. Eftersom lokal navigering varierar oftare än global navigering behandlas den ofta annorlunda.
+                <br> Vanliga arrangemang för lokal navigering och global navigering inkluderar:
+                <br>
+                <span>Inverted-L</span> <br> Det är mycket vanligt att placera en global navigering längst upp på sidan och ha lokal navigering som en vertikal länklista till vänster i form av ett inverted L.
+                <br> <span>Horizontal</span> <br> Lokal navigering kan också representeras av en andra rad med alternativ under en horisontell global navigering eller av dynamiska menyer.
+
+                <br> <span>Embedded vertical</span> <br> När den globala navigeringen presenteras i en vertikal meny till vänster eller höger, är det vanligt att bädda in den lokala navigeringen mellan de globala navigerings alternativen i en trädliknande
+                struktur.
+
+            </p>
+        </div>
+        <div>
+            <img src="images/navigation.png" alt="navigation">
+        </div>
+        <div>
+            <h1>Beskriv kort vad supplementary respektive courtesy navigering är. Ta upp likheter och skillnader.</h1>
+            <p>
+                <strong>Supplementary navigering</strong> Supplementary navigationssystem, även kallade fjär navigerings element, ger användarna ytterligare, icke-hierarkiska sätt att navigera på en webbplats. Tre vanliga kompletterande navigationssystem
+                är innehållsförteckningar, index och webbplatskartor</p>
+            <br> <strong> Courtesy navigering</strong>
+            <br>
+            <p>Courtesy navigering (övre högra hörnet) - Detta är en 'artighet' till dina besökare, så du bör överväga att inkludera en länk till 'Om', 'Kontakta oss' och/eller ditt telefonnummer. Besökare tittar till det övre högra hörnet för snabb åtkomst
+                information
+            </p>
+        </div>
+        <div>
+            <h1> Länka till någon valfri webbsida (dock ej den som används i föreläsningens exempel) och ange var på sidan man kan hitta ovanstående fyra typer av navigering.
+            </h1>
+            <p>
+                <strong>Global Navigering</strong> &nbsp; <a href="https://www.justinmind.com/examples">global navigering</a> <br>
+                <strong>Local Navigering</strong> &nbsp; <a href="https://www.justinmind.com/ui-design-tool">local navigering</a> <br>
+                <strong> Courtesy Navigering</strong> &nbsp; <a href="https://www.justinmind.com/contact">courtest navigering</a> <br>
+                <strong>Supplementary Navigering</strong> &nbsp; <a href="https://www.justinmind.com/features">supplementry navigering</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="link">
+        <a href="index.html">Gå till fråga 1</a> <br>
+        <a href="TGA.html">Gå till fråga 3</a>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Box Models</title>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html"> Boxmodellen</a>
+
+        <a href="navigation.html">Navigation</a>
+        <a href="TGA.html">Målgruppsanalys
+            och kravspecifikation
+            </a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <section>
+        <div class="main-container">
+            <ul class="grid-wrapper">
+                <li>
+                    <h1>Beskriv boxmodellen och ge en kort förklaring av var och en av de CSS-egenskaper som ingår i den.</h1>
+                    <p>Box modellen är i huvudsak en ruta som omsluter varje HTML-element. Den består av: marginaler, kanter, utfyllnad och det faktiska innehållet.
+                    </p>
+                    <ol>
+                        <li><strong>Innehåll:</strong> Innehållet i rutan, där text och bilder visas.</li>
+                        <li><strong>Utfyllnad:</strong>Rensar ett område runt innehållet. Utfyllnaden är genomskinlig.</li>
+                        <li><strong>Kanter:</strong>En kant som går runt stoppningen och innehållet.</li>
+                        <li><strong>Marginal:</strong>Rensar ett område utanför gränsen. Marginalen är transparent.</li>
+                    </ol>
+                </li>
+                <li><img id="image" src="images/boxmodel.gif" alt=""></li>
+                <li>
+                    <h1>Beskriv också skillnaden mellan värdena content-box och border-box för CSS-egenskapen box-sizing.
+                    </h1>
+                    <p>
+                        Egenskapen box-sizing definierar hur bredden och höjden på ett element beräknas: ska de inkludera utfyllnad och kanter eller inte
+                        <br> <strong>content-box</strong>: I detta inkluderar egenskaperna bredd och höjd (och min/max egenskaper) endast innehållet. Kanter och utfyllnad ingår ej.
+
+                        <br> <strong>border-box</strong>: : I detta inkluderar egenskaperna bredd och höjd (och min/max egenskaper) innehåll, utfyllnad och kanter.
+                    </p>
+                </li>
+                <li><img class="image" src="images/boxsizing.png" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="link">
+        <a href="navigation.html">Gå till fråga 2</a> <br>
+        <a href="TGA.html">Gå till fråga 3</a>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
